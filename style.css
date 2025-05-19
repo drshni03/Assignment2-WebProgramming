@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+html,body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+
+main{
+    flex: 1;
+    background-color: rgb(231, 219, 167);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    background-color:brown;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.main{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.logo img{
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0px;
+}
+
+.header-content h1{
+    font-size: 2.5rem;
+    color: antiquewhite;
+    margin: 0;
+    line-height: 150px;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.nav li a{
+    text-decoration: none;
+    color:beige;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav li a:hover{
+    background-color:rgb(208, 142, 43);
+    color:beige;
+}
+
+.nav li a:active{
+    background-color:rgb(179, 155, 118);
+    color: black;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align:left;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.hero h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 1rem;
+}
+
+.hero-txt{
+    flex: 1;
+    max-width: 750px;
+    padding-right: 2rem;
+}
+
+.hero-txt p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color:rgb(135, 103, 62);
+}
+
+.hero-img{
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-img:hover{
+    transform: scale(1.05) rotate(2deg);
+}
+
+@media (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .hero-txt,.hero-img {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.btn{
+    background-color:brown ;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    color:antiquewhite;
+    border-radius: 25px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.btn:hover{
+    background-color:black;
+    color: beige;
+    transform: scale(1.05);
+}
+
+.project{
+    background-color:rgb(184, 162, 126);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.project:hover{
+    transform: scale(1.03);
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects h1{
+    font-size: 3rem;
+    color: brown;
+
+    background-color:floralwhite;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%
+}
+
+.project embed{
+    display: block;
+    margin: auto;
+}
+
+.project h2 {
+    color: brown;
+}
+
+.project p {
+    color:rgb(255, 255, 255);
+}
+
+
+footer {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(cheetah.print.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: beige;
+}
+
